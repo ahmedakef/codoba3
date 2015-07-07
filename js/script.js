@@ -4,22 +4,22 @@
 
   $('#share').click(function (){
     	$("#information").html('');
-       $("#information").load($tmp_url+"/share.html").slideToggle(800).addClass("row new information");              
+       $("#information").load($tmp_url+"/pages/share.html").slideToggle(800).addClass("row new information");              
   });
 
     $('#contactus').click(function (){
     	$("#information").html('');
-       $("#information").load($tmp_url+"/contactus.html").slideToggle(800).addClass("row new information");              
+       $("#information").load($tmp_url+"/pages/contactus.html").slideToggle(800).addClass("row new information");              
   });
 
     $('#aboutcordoba').click(function (){
     	$("#information").html('');
-       $("#information").load($tmp_url+"/aboutcordoba.html").slideToggle(800).addClass("row new information");              
+       $("#information").load($tmp_url+"/pages/aboutcordoba.html").slideToggle(800).addClass("row new information");              
   });
 
     $('#infographic').click(function (){
     	$("#information").html('');
-       $("#information").load($tmp_url+"/infographic.html").slideToggle(800).addClass("row new information");              
+       $("#information").load($tmp_url+"/pages/infographic.html").slideToggle(800).addClass("row new information");              
   });
 
 });

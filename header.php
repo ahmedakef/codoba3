@@ -9,7 +9,7 @@
           <link rel="alternate" type="application/rss+xml" title="RSS 2.0" href="<?php bloginfo('rss2_url'); ?>" /> 
           <link rel="shortcut icon" href="<?php bloginfo('template_directory'); ?>/favicon.ico" />
    <!--    here should be code from word press but it wasn't  do the font so i don't know what should i do -->
-          <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/bootstrap.min.css" type="text/css" media="screen" />
+          <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/css/bootstrap.min.css" type="text/css" media="screen" />
           <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/style.css" type="text/css" media="screen" />
 
 

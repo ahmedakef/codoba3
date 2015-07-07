@@ -64,17 +64,13 @@ ul , ol , dl {
 
 @font-face {
          font-family: 'Hacen Saudi Arabia';
-         src: url('Hacen Saudi Arabia.eot');
-         src: url('Chunkfive-webfont.eot?#iefix') format('embedded-opentype'),
-         url('Hacen Saudi Arabia.woff') format('woff'),
-         url('Hacen Saudi Arabia.ttf') format('truetype'),
-         url('Hacen Saudi Arabia.svg#ChunkFiveRegular') format('svg');
+         src:url('fonts/Hacen Saudi Arabia.ttf') format('truetype');
          font-weight: normal;
          font-style: normal;
 }
 @font-face {
          font-family: 'flat';
-         src: url('JF Flat regular.ttf');
+         src: url('fonts/JF Flat regular.ttf');
          font-style: normal;
 }
 @import url(http://fonts.googleapis.com/earlyaccess/droidarabickufi.css);
