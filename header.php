@@ -11,6 +11,7 @@
    <!--    here should be code from word press but it wasn't  do the font so i don't know what should i do -->
           <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/css/bootstrap.min.css" type="text/css" media="screen" />
           <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/style.css" type="text/css" media="screen" />
+          <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/css/bootstrap-rtl.min.css" type="text/css" media="screen" />
 
 
 <?php
@@ -43,10 +44,10 @@
         <span class="site-title">قرطبة إنفوجرافيك</span>
      
      <ul class="nav navbar-nav the-pages">
-       <li><a id="contactus">اتصل بنا</a></li>
-       <li><a id="share">شارك</a></li>
-       <li><a id="infographic">عن الإنفوجرافيك</a></li>
        <li><a id="aboutcordoba">عن قرطبة</a></li>
+       <li><a id="infographic">عن الإنفوجرافيك</a></li>
+       <li><a id="share">شارك</a></li>
+       <li><a id="contactus">اتصل بنا</a></li>
 
      </ul>
      </div>
