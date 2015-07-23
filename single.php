@@ -23,32 +23,6 @@
     <div class="panel panel-default text-center">
         <div class="panel-heading">
           <h3><?php the_title(); ?></h3>
-         <!-- small information
-             <small>
-              <span class="glyphicon glyphicon-user"></span>
-              <?php /* the_time('F j, Y'); ?> at <?php the_time('g:i a'); ?>
-             </small>
-  
-             <small>
-              <span class="glyphicon glyphicon-time"></span>
-              <?php the_author_posts_link(); ?>
-             </small>
-  
-  
-             <small>
-              <span class="glyphicon glyphicon-tasks"></span>
-              <?php the_category(', ') ?>
-              </small>
-  
-             <small>
-              <span class="glyphicon glyphicon-comment"></span>
-              <?php comments_number('0', '1', '%'); */?> ترك تعليقا
-             </small>
-
-              <br/>
-
-              <span> <?php the_meta(); ?> </span>
--->
 
         </div>
         <div class="panel-body"><p><?php the_content(); ?></p></div>
@@ -63,25 +37,13 @@
 </div>
 
   <div class="col-md-3 text-center leftsidebar">
-
       <div class="panel panel-default">
         <div class="panel-heading"><h4>ابحث  </h4></div>
         <div class="panel-body">
-          <div id="search" >
               <?php include TEMPLATEPATH . '/searchform.php'; ?>
-          </div>
         </div>
       </div>
-      <div class="panel panel-default">
-        <div class="panel-heading"><h4>تابعنا علي : </h4></div>
-        <div class="panel-body">
-            <ul class="share-buttons">
-              <li><a href="https://www.facebook.com/cordobaig" target="_blank"><img src="<?php bloginfo('template_directory'); ?>/images/Facebook.png"></a></li>
-              <li><a href="https://twitter.com/cordobaig" target="_blank" title="Tweet"><img src="<?php bloginfo('template_directory'); ?>/images/Twitter.png"></a></li>
-              <li><a href="https://plus.google.com/share?url=" target="_blank" title="Share on Google+"><img src="<?php bloginfo('template_directory'); ?>/images/Google+.png"></a></li>
-            </ul>
-        </div>
-      </div>
+
 
 
       <div class="panel panel-default">
@@ -96,6 +58,20 @@
             <?php the_meta(); ?>
         </div>
       </div>
+
+
+      <div class="panel panel-default">
+        <div class="panel-heading"><h4>تابعنا علي : </h4></div>
+        <div class="panel-body">
+            <ul class="share-buttons">
+              <li><a href="https://www.facebook.com/cordobaig" target="_blank"><img src="<?php bloginfo('template_directory'); ?>/images/Facebook.png"></a></li>
+              <li><a href="https://twitter.com/cordobaig" target="_blank" title="Tweet"><img src="<?php bloginfo('template_directory'); ?>/images/Twitter.png"></a></li>
+              <li><a href="https://plus.google.com/share?url=" target="_blank" title="Share on Google+"><img src="<?php bloginfo('template_directory'); ?>/images/Google+.png"></a></li>
+            </ul>
+        </div>
+      </div>
+
+
 
 <?php dynamic_sidebar(); ?> 
 <?php dynamic_sidebar('Sidebar2'); ?> 
@@ -116,11 +92,4 @@
 
 
 
-
-
-
-
 <?php get_footer(); ?>
-
-
-<!-- <img data-src="holder.js/300x200" alt="قوانين كبلر" src="http://i.imgur.com/FzGC0ezl.jpg"> -->

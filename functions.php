@@ -37,7 +37,7 @@ function kriesi_pagination($pages = '', $range = 2)
      if(1 != $pages)
      {
          echo '<div class="row">
-      <div class="col-md-4 col-md-push-3">
+      <div class="col-md-4 col-md-push-5">
        <ul class="pagination pagination-lg">';
          if($paged > 2 && $paged > $range+1 && $showitems < $pages) echo "<li><a href='".get_pagenum_link(1)."'>&laquo;</a></li>";
          if($paged > 1 && $showitems < $pages) echo "<li><a href='".get_pagenum_link($paged - 1)."'>&lsaquo;</a></li>";

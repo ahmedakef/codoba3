@@ -1,5 +1,5 @@
-<div class="row" style="font-size: 19px; margin-top:15px;">
-  <div class="col-md-8">
+<div class="row" style="font-size: 19px;">
+  <div class="col-md-6">
     <ul class="nav nav-tabs" role="tablist">
 
     <li class="dropdown">
@@ -27,8 +27,8 @@
 
    </ul>
   </div>
-  <div class="col-md-4">
-      <div id="search push-left" >
+  <div class="col-md-offset-3 col-md-3">
+      <div id="search" >
           <?php include TEMPLATEPATH . '/searchform.php'; ?>
       </div>
   </div>

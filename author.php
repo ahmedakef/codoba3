@@ -36,7 +36,7 @@ $curauth = (isset($_GET['author_name'])) ?
    <?php while(have_posts()) : the_post(); ?>
 
 
-    <div class="col-md-3">
+    <div class="col-md-3 col-sm-4 col-xs-6">
     <div class="thumbnail">
       <a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>"><?php the_post_thumbnail(array()); ?></a>
       <div class="caption">

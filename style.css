@@ -106,15 +106,17 @@ body{
 	margin-right: 245px;
 	margin-top: -33px;
 	margin-bottom: 20px;
-}/*
+}
+@media (max-width: 979px){
+	.the-pages{
+	margin-right: 0px;		
+	}
+}
+
+
+
 #search{
 	padding-top: 12px;
-}
-#search form{
-	margin: 0px;
-}
-.panel-body #search input{
-	width: 171px;
 }
 /* top nav bar*/
 .navbar{
