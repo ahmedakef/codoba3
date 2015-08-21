@@ -88,10 +88,10 @@ body{
 .row{
   background-color: #FFFFFF;
 }
-
 .loogo{
-	margin-right: 345px;
-	-webkit-margin-right:10px;
+  background-color: #f8f8f8;
+  border-color: #e7e7e7;
+
 }
 .site-title {
 	color: #808080;
@@ -103,11 +103,11 @@ body{
     font-weight:bold;
 }
 .the-pages{
-	margin-right: 245px;
+	margin-right: 250px;
 	margin-top: -33px;
-	margin-bottom: 20px;
+	margin-bottom: 10px;
 }
-@media (max-width: 979px){
+@media (max-width: 992px){
 	.the-pages{
 	margin-right: 0px;		
 	}
@@ -195,11 +195,6 @@ p span p{
 .lastaa{
 	background-color: #212A34;
 	color: #556678;
-}
-@media (max-width: 979px){
-	.loogo{
-		display: none;
-	}
 }
 
 
@@ -310,8 +305,12 @@ small{
 	margin: auto;
 	display: block;
 }
+.form-horizontal .control-label{
+	line-height: 150%;
+}
 
 /* author*/
+
 .links{
 	margin-right: 15px;
 }
@@ -325,11 +324,33 @@ small{
 	margin-bottom: 0px;
 }
 .authorinfo{
-	margin-top:10px;
-	margin-bottom:12px;
-	padding-top: 0px;
 	background-color:#F5F5F5;
 }
 .authourright{
 	border-left: 5px rgba(57,180,215,0.75) solid;
+}
+
+
+/* comments */
+
+.avatar{
+	border-radius: 50%;
+}
+
+cite{
+  display: block;
+  font-size: 80%;
+  line-height: 1.42857143;
+  color: #777;
+  margin-bottom: 0px;
+}
+#comments-list li:nth-child(2n) .row{
+	background-color: #F7F7F7;
+}
+li .row {
+	padding-top: 20px;
+	padding-bottom: 8px;
+}
+.commentauthor{
+	padding-right: 16px;
 }

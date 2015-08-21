@@ -117,4 +117,5 @@ register_sidebars(array(
     }
 }
 */
+
 ?>

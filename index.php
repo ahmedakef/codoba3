@@ -12,7 +12,7 @@
       <div class="thumbnail">
         <a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>"><?php the_post_thumbnail(array()); ?></a>
         <div class="caption">
-          <h3><?php the_title(); ?></h3>
+          <a href="<?php the_permalink(); ?>"><h3 class="text-center"><?php the_title(); ?></h3></a>
           <p><?php the_content(); ?></p>
           <p><?php the_category(', ') ?></p>
         </div>

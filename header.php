@@ -14,6 +14,7 @@
           <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/css/bootstrap-rtl.min.css" type="text/css" media="screen" />
 
 
+ <?php if ( is_singular() ) wp_enqueue_script( 'comment-reply' ); ?>
 <?php
   if ( is_singular() && get_option( 'thread_comments' ) )
     wp_enqueue_script( 'comment-reply' );
@@ -27,9 +28,23 @@
 
   <div class="container">
 
+  <div class="row loogo">
+    <div class="col-md-6 col-md-offset-4 hidden-xs">  
+        <a href="<?php bloginfo('url'); ?>">
+          <img src="<?php bloginfo('template_url'); ?>/images/logo.png"
+             width="125"
+             class="img-circle img-thumbnail"
+             alt="قرطبة إنفوجرافيك" 
+             title="<?php bloginfo('name'); ?>">
+        </a>
+        <span class="site-title">قرطبة إنفوجرافيك</span>
+    </div>
+     
+
+  </div>
   <div class="row">
     <nav class="navbar navbar-default">
-     <div class="container-fluid">
+     <div class="container">
          <div class="navbar-header">
       <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
         <span class="sr-only">Toggle navigation</span>
@@ -40,9 +55,6 @@
      
        </div>
       <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-        <a href="<?php bloginfo('url'); ?>"><img src="<?php bloginfo('template_url'); ?>/images/logo.png" width="125" class="img-circle img-thumbnail loogo" alt="قرطبة إنفوجرافيك" title="<?php bloginfo('name'); ?>"></a>
-        <span class="site-title">قرطبة إنفوجرافيك</span>
-     
      <ul class="nav navbar-nav the-pages">
        <li><a id="aboutcordoba">عن قرطبة</a></li>
        <li><a id="infographic">عن الإنفوجرافيك</a></li>

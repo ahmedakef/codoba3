@@ -22,4 +22,9 @@
        $("#information").load($tmp_url+"/pages/infographic.html").slideToggle(800).addClass("row new information");              
   });
 
+  $('a.top').click(function(){
+  $(document.body).animate({scrollTop : 0}, 800);
+  return false;
+});
+
 });

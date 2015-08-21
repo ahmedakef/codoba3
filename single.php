@@ -1,10 +1,5 @@
 <?php get_header(); ?>
 
-<style type="text/css">
-  .row{
-  background-color: #E8F0F5;
-}
-</style>
 
 
 
@@ -14,7 +9,7 @@
 
 
 
-<div class="row">
+<div class="row" style="background-color: #E8F0F5;">
   
 
 
@@ -34,6 +29,15 @@
         </div>
     </div>
 
+        <div class="panel panel-default">
+        <div class="panel-heading"><h4>التعليقات : </h4></div>
+        <div class="panel-body">
+             <?php comments_template(); ?> 
+        </div>  
+      </div>
+
+
+
 </div>
 
   <div class="col-md-3 text-center leftsidebar">
@@ -50,12 +54,21 @@
         <div class="panel-heading"><h4>معلومات عن الإنفوجرافيك</h4></div>
         <div class="panel-body text-right">
             <ul class="postifooo">
-              <li><span class="glyphicon glyphicon-user"></span><?php the_author_posts_link(); ?></li>
+              <li><span class="glyphicon glyphicon-user"></span>المشارك : <?php the_author_posts_link(); ?></li>
               <li><span class="glyphicon glyphicon-time"></span>  <?php the_time('F j, Y'); ?> at <?php the_time('g:i a'); ?></li>
               <li><span class="glyphicon glyphicon-tasks"></span><?php the_category(', ') ?></li>
               <li><span class="glyphicon glyphicon-comment"></span>  <?php comments_number('0', '1', '%'); ?> ترك تعليقا   </li>
+              <li><span class="glyphicon glyphicon-tree-deciduous"></span>المصمم :
+                  <a href="<?php echo get_post_meta($post->ID, 'رابط المصمم', true);?>">
+                    <?php echo get_post_meta($post->ID, 'اسم المصمم', true);?>
+                  </a>
+              </li>
+              <li><span class="glyphicon glyphicon-grain"></span>الجهة الراعية :
+                  <a href="<?php echo get_post_meta($post->ID, 'رابط الجهة الراعية', true);?>">
+                    <?php echo get_post_meta($post->ID, 'اسم الجهة الراعية', true);?>
+                  </a>
+              </li>
             </ul>
-            <?php the_meta(); ?>
         </div>
       </div>
 
@@ -73,8 +86,6 @@
 
 
 
-<?php dynamic_sidebar(); ?> 
-<?php dynamic_sidebar('Sidebar2'); ?> 
 
   </div>
 

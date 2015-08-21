@@ -31,6 +31,7 @@
     <li><a href="https://www.twitter.com/cordobaig">تويتر</a></li>
     <li><a href="">جوجل بلس</a></li>
     <li><a href="http://cordoba.imgur.com/">imagur</a></li>
+    <li><a class="top" href="#">عد إلى الأعلى</a></li>
   </ul>
   </div>
 

@@ -10,26 +10,25 @@ $curauth = (isset($_GET['author_name'])) ?
 
 
 
-<div class="row authorinfo">
-  <div class="col-md-6 col-md-offset-3"><br/>
-    <h2><?php echo $curauth->nickname; ?></h2>
-    <p><?php echo $curauth->description; ?></p>
-  </div>
-  <div class="col-md-2 authourright"><br/>
+<?php get_sidebar(); ?>
+
+<div class="row"  style="padding-top:80px;">
+  <div class="col-md-3 authorinfo">
     <p>
-      <img src="<?php bloginfo('template_url'); ?>/images/log2.png" class="img-circle img-thumbnail authorimg" alt="<?php echo $curauth->nickname; ?>" title="<?php echo $curauth->nickname; ?>">
+      <?php echo get_avatar( get_the_author_email(), '80' ); ?>
     </p>
+    <h2 class="text-center"><?php echo $curauth->nickname; ?></h2>
     <p class="links">
       <a href="<?php echo $curauth->user_url; ?>"><span class="glyphicon glyphicon-envelope"></span></a>
       <a href=""><span class="glyphicon glyphicon-home"></span></a>
       <a href=""><span class="glyphicon glyphicon-thumbs-up"></span></a>
     </p>
+    <p><?php echo $curauth->description; ?></p>
   </div>
-</div>
 
-<?php get_sidebar(); ?>
 
-<div class="row" style="padding:80px;">
+
+<div class="col-md-9">
 
 
 <?php if(have_posts()) : ?>
@@ -40,7 +39,7 @@ $curauth = (isset($_GET['author_name'])) ?
     <div class="thumbnail">
       <a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>"><?php the_post_thumbnail(array()); ?></a>
       <div class="caption">
-        <h3><?php the_title(); ?></h3>
+        <a href="<?php the_permalink(); ?>"><h3 class="text-center"><?php the_title(); ?></h3></a>
         <p><?php the_content(); ?></p>
         <p><a href="#" class="btn btn-primary" role="button">أعجبني</a>
         <span class="glyphicon glyphicon-eye-open pull-left"> 35</span>
@@ -58,11 +57,9 @@ $curauth = (isset($_GET['author_name'])) ?
 <?php endif; ?>
 
 
-
 </div>
 
-
-
+</div>
 
 
 
